@@ -18,11 +18,15 @@ public class SlackApi {
         if (service == null) {
             throw new IllegalArgumentException(
                     "Missing WebHook URL Configuration @ SlackApi");
-        } else
+        } 
+        /*
+        else
             if (!service.startsWith("https://hooks.slack.com/services/")) {
                 throw new IllegalArgumentException(
                         "Invalid Service URL. WebHook URL Format: https://hooks.slack.com/services/{id_1}/{id_2}/{token}");
             }
+            
+        */
 
         this.service = service;
     }
